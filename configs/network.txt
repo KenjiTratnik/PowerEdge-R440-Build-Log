@@ -1,4 +1,14 @@
+# Dell R440 Homelab Network Configuration
+# Provides static IP assignments and DNS for server and management interface
+
 Subnet: 192.168.6.0/22
+
+# Out-of-Band Management
 iDRAC: 192.168.6.219
+
+# Host Operating System
 Host OS: 192.168.6.220
-DNS: 8.8.8.8, 1.1.1.1
+
+# DNS Configurations
+Primary DNS: 8.8.8.8 (Google)
+Secondary DNS: 1.1.1.1 (Cloudflare)
