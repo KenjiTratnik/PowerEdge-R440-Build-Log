@@ -1,0 +1,4 @@
+OS: Windows Server 2019
+BIOS: 2.x.x
+iDRAC: 7.x.x.x
+RAID:  PERC H330 RAID 1
