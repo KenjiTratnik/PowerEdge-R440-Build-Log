@@ -1,4 +1,15 @@
-OS: Windows Server 2019
+# Dell R440 Homelab System Baseline
+# Provides hardware and firmware baseline for reproducible deployment
+
+OS: Windows Server 2019 Standard
+
 BIOS: 2.x.x
 iDRAC: 7.x.x.x
-RAID:  PERC H330 RAID 1
+RAID Controller: PERC H330
+RAID Configuration: RAID 1 (2 x 1 TB SATA drives)
+Memory: 32 GB DDR4 (2 x 16 GB @ 2666 MHz)
+CPU: Intel Xeon Silver 4110 (8 cores, 2.1 GHz)
+
+# Notes
+# This baseline represents the known-good starting state for lab deployments.
+# Updates to firmware or hardware should be reflected here to maintain reproducibility.
