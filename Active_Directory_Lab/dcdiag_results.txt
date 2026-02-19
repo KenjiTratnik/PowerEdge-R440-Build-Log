@@ -1,0 +1,140 @@
+Directory Server Diagnosis
+
+Performing initial setup:
+
+   Trying to find home server...
+
+   * Verifying that the local machine LAB-DC1 is a Directory Server.
+   Home Server = LAB-DC1
+
+   * Connecting to directory service on server LAB-DC1.
+
+   * Identified AD Forest.
+   Collecting AD specific global data
+   * Collecting site info.
+
+   Iterating through the sites
+   Looking at base site object: CN=NTDS Site Settings,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local
+   * Identifying all servers.
+
+   Iterating through the list of servers
+   Getting information for the server CN=NTDS Settings,CN=LAB-DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local
+   All the info for the server collected
+
+   * Found 1 DC(s). Testing 1 of them.
+
+Done gathering initial info.
+
+--------------------------------------------------
+
+Doing initial required tests
+
+Testing server: Default-First-Site-Name\LAB-DC1
+
+   Starting test: Connectivity
+
+      * Active Directory LDAP Services Check
+      * Active Directory RPC Services Check
+      ......................... LAB-DC1 passed test Connectivity
+
+--------------------------------------------------
+
+Doing primary tests
+
+Testing server: Default-First-Site-Name\LAB-DC1
+
+   Starting test: Advertising
+      LAB-DC1 is advertising as:
+         - Domain Controller
+         - LDAP Server
+         - Writable Directory
+         - Key Distribution Center (KDC)
+         - Time Server
+         - Global Catalog (GC)
+      ......................... LAB-DC1 passed test Advertising
+
+   Starting test: FrsEvent
+      Skipped (Server running DFSR)
+      ......................... LAB-DC1 passed test FrsEvent
+
+   Starting test: DFSREvent
+      DFS Replication Event Log
+      ......................... LAB-DC1 passed test DFSREvent
+
+   Starting test: SysVolCheck
+      SYSVOL is ready
+      ......................... LAB-DC1 passed test SysVolCheck
+
+   Starting test: KccEvent
+      No KCC errors found
+      ......................... LAB-DC1 passed test KccEvent
+
+   Starting test: KnowsOfRoleHolders
+      Schema Owner: LAB-DC1
+      Domain Owner: LAB-DC1
+      PDC Owner: LAB-DC1
+      RID Owner: LAB-DC1
+      Infrastructure Owner: LAB-DC1
+      ......................... LAB-DC1 passed test KnowsOfRoleHolders
+
+   Starting test: MachineAccount
+      SPN records verified
+      ......................... LAB-DC1 passed test MachineAccount
+
+   Starting test: NCSecDesc
+      Security permissions verified for:
+         - ForestDnsZones
+         - DomainDnsZones
+         - Schema
+         - Configuration
+         - Domain
+      ......................... LAB-DC1 passed test NCSecDesc
+
+   Starting test: NetLogons
+      Verified shares:
+         \\LAB-DC1\netlogon
+         \\LAB-DC1\sysvol
+      ......................... LAB-DC1 passed test NetLogons
+
+   Starting test: ObjectsReplicated
+      Objects up-to-date on all servers (Single DC)
+      ......................... LAB-DC1 passed test ObjectsReplicated
+
+   Starting test: Replications
+      Replication check successful
+      ......................... LAB-DC1 passed test Replications
+
+   Starting test: RidManager
+      RID Master: LAB-DC1
+      RID allocation successful
+      ......................... LAB-DC1 passed test RidManager
+
+   Starting test: Services
+      All required AD services running
+      ......................... LAB-DC1 passed test Services
+
+   Starting test: SystemLog
+      Warning: Time service not synchronized
+      Error: Secure Boot certificate update pending
+      ......................... LAB-DC1 failed test SystemLog
+
+   Starting test: VerifyReferences
+      System object references validated
+      ......................... LAB-DC1 passed test VerifyReferences
+
+--------------------------------------------------
+
+Partition Tests:
+
+ForestDnsZones ......................... Passed
+DomainDnsZones ......................... Passed
+Schema ................................. Passed
+Configuration .......................... Passed
+Domain (LAB.LOCAL) ..................... Passed
+
+--------------------------------------------------
+
+Enterprise Tests:
+
+   LocatorCheck ......................... Passed
+   Intersite ............................ Passed
