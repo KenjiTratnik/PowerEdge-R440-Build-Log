@@ -34,9 +34,9 @@ Configured manual IP and DNS settings to ensure deterministic connectivity durin
 Active_Directory_Lab/
 ├── README.md
 ├── docs/
-│ ├── dc-deployment.md # AD DS installation & promotion
+│ ├── DC_Deployment.md # AD DS installation & promotion
 │ ├── dcdiag_results.txt # dcdiag analysis & diagnostics
 │ ├── Users_Created.md # User creation steps & validation
-│ └── vm-join-instructions.md # Windows 10 domain join guide
+│ └── VM_Join_Instructions.md # Windows 10 domain join guide
 ├── screenshots/ # Validation proof & command output
 
