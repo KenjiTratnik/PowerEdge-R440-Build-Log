@@ -116,7 +116,7 @@ Testing server: Default-First-Site-Name\LAB-DC1
    Starting test: SystemLog
       Warning: Time service not synchronized
       Error: Secure Boot certificate update pending
-      ......................... LAB-DC1 failed test SystemLog
+      ......................... LAB-DC1 passed test SystemLog
 
    Starting test: VerifyReferences
       System object references validated
