@@ -17,8 +17,6 @@ The objective was to extend the bare-metal Windows Server installation into a fu
 ---
 
 ## Key Learning
-- **DFS Replication Behavior in Single-DC Environments**:
-Observed DFSREvent (Event 1202) during initial diagnostics. The determined root cause was absence of a replication partner. Confirmed no functional impact.
 - **DNS as a Dependency for Domain Join**:
 Verified that incorrect DNS configuration prevents successful domain join, reinforcing the importance of directing to the DC for name resolutions.
 - **Active Directory Health Validation**:
