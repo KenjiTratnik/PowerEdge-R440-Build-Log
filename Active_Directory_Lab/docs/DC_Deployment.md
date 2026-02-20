@@ -87,21 +87,7 @@ Results:
 - RID Manager: Passed
 - VerifyReferences: Passed
 
-## 7. DFS Replication Observation
-An initial DFSREvent (Event ID 1202) was observed.
-
-Cause:
-- Single-DC topology
-- No replication partner available
-
-Impact:
-- No functional impairment
-- Expected behavior in lab environment
-
-Conclusion:
-DFS replication operating as expected for single-domain-controller infrastructure.
-
-## 8. Service Validation
+## 7. Service Validation
 Verified critical services were running:
 - NTDS
 - DNS
@@ -113,7 +99,7 @@ Verified critical services were running:
 
 SYSVOL and NETLOGON shares were confirmed accessible
 
-## 9. FSMO Role Verification
+## 8. FSMO Role Verification
 All FSMO roles assigned to LAB-DC1:
 - Schema Master
 - Domain Naming Master
@@ -123,7 +109,7 @@ All FSMO roles assigned to LAB-DC1:
 
 Single-DC environment expected to hold all roles.
 
-## 10. Deployment Outcome
+## 9. Deployment Outcome
 The Dell R440 server is now operating as:
 - Active Directory Domain Controller
 - DNS Server for LAB.LOCAL
